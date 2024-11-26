@@ -27,4 +27,13 @@ public class SimpleCalculatorTest {
         assertEquals(16, rs); //rs가 16이기를 기대한다(expected)
     }
 
+    @Test
+    @DisplayName("20 + 10 = 30")
+    public void testPlus3() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.plus(20,10);
+
+        assertEquals(30, rs); //rs가 16이기를 기대한다(expected)
+    }
+
 }
