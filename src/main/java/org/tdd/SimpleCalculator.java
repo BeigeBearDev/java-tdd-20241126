@@ -3,6 +3,14 @@ package org.tdd;
 public class SimpleCalculator {
     // 더하기
     public int plus(int x, int y) {
+        /* Green 단계 구현
+        if(x == 1 && y == 2) {
+            return 3;
+        } else if (x == 2 && y == 14) {
+            return 16;
+        }
+         */
+        // Refactor 단계 구현
         return x + y;
     }
 

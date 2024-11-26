@@ -18,4 +18,13 @@ public class SimpleCalculatorTest {
         assertEquals(3, rs); //rs가 3이기를 기대한다(expected)
     }
 
+    @Test
+    @DisplayName("2 + 14 = 16")
+    public void testPlus2() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.plus(2,14);
+
+        assertEquals(16, rs); //rs가 16이기를 기대한다(expected)
+    }
+
 }
