@@ -38,4 +38,40 @@ public class SimpleCalculatorTest {
         assertThat(rs).isEqualTo(30);
     }
 
+    @Test
+    @DisplayName("10 - 2 = 8")
+    public void testMinus1() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.minus(10,2);
+
+        assertThat(rs).isEqualTo(8);
+    }
+
+    @Test
+    @DisplayName("10 * 2 = 20")
+    public void testMutiply1() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.multiply(10,2);
+
+        assertThat(rs).isEqualTo(20);
+    }
+
+    @Test
+    @DisplayName("10 / 2 = 5")
+    public void testDivide1() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.divide(10,2);
+
+        assertThat(rs).isEqualTo(5);
+    }
+
+    @Test
+    @DisplayName("10 % 2 = 0")
+    public void testReminder1() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int rs = calculator.reminder(10,2);
+
+        assertThat(rs).isEqualTo(0);
+    }
+
 }
